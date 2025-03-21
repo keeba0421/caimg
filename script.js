@@ -17,7 +17,6 @@ document.getElementById('searchButton').addEventListener('click', async () => {
             const avatarUrl = data.avatarUrl;
             const levelImgUrl = data.levelImgUrl;
 
-            // 아바타 이미지 표시
             const avatarDisplay = document.getElementById('avatar-display');
             if (avatarUrl && avatarUrl !== '이미지 없음') {
                 avatarDisplay.style.backgroundImage = `url(${avatarUrl})`;
@@ -26,7 +25,6 @@ document.getElementById('searchButton').addEventListener('click', async () => {
                 resultDiv.innerHTML += '<p>아바타 이미지를 찾을 수 없습니다.</p>';
             }
 
-            // 레벨 이미지 표시
             if (levelImgUrl && levelImgUrl !== '이미지 없음') {
                 resultDiv.innerHTML = `<img src="${levelImgUrl}" alt="레벨 이미지" class="level-img">`;
             } else {
