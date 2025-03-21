@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크아 닉네임 검색</title>
+    <style>
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; text-align: center; }
+        input[type="text"] { width: 70%; padding: 10px; }
+        button { padding: 10px 20px; margin-left: 10px; }
+        #result { margin-top: 20px; }
+        #avatar-display { width: 200px; height: 200px; background-size: cover; margin: 20px auto; }
+        .level-img { max-width: 50px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>크아 캐릭터 정보 검색</h1>
+        <input type="text" id="nickname" placeholder="닉네임을 입력하세요" />
+        <button id="searchButton">검색</button>
+        <div id="result"></div>
+        <div id="avatar-display"></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
